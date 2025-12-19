@@ -4,6 +4,8 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
     ensure_installed = { 'lua_ls', 'pyright' }, -- add more here
     automatic_installation = true,
+        handlers = {
+        jdtls = function() end,    }
 })
 
 lsp.setup()

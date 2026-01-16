@@ -22,6 +22,9 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+vim.opt.guifont = "JetBrainsMono_Nerd_Font:h11"
+vim.opt.showtabline = 2
+
 vim.cmd([[
   autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focus = false })
 ]])
